@@ -1,16 +1,30 @@
-==On not writing tests
+On not writing tests
+--------------------
 
-Let's get it out of the way: automated testing is important.  If you're developing a nuclear station control system, or a Mars rover software, you'll definitely have to support a comprehensive test suite.  If you're working on a personal pet project -- at early stages you might get by without any tests at all.  And then there's all the other kinds of software in between, which probably make up most of the software in the world, and which should be covered with tests, to some degree.
+Let's get it out of the way: automated testing is important.  If you're developing a nuclear station control system, 
+or a Mars rover software, you'll definitely have to support a comprehensive test suite.  If you're working on a personal
+pet project -- at early stages you might get by without any tests at all.  And then there's all the other kinds of 
+software in between, which probably make up most of the software in the world, and which should be covered with tests, 
+to some degree.
 
-Writing tests usually involves trade-off: you spend less time writing production code and more time designing, writting and supporting test code.  Assume there's a deadline or something, and you feel you could do with writing a bit less tests than you do now. Or maybe you don't, but you just inherited a large legacy code base with only a modest amount of tests, and can't afford to stop ongoing development for months just to add test code. 
+Writing tests usually involves trade-off: you spend less time writing production code and more time designing, writting 
+and supporting test code.  Assume there's a deadline or something, and you feel you could do with writing a bit less 
+tests than you do now. Or maybe you don't, but you just inherited a large legacy code base with only a modest amount 
+of tests, and can't afford to stop ongoing development for months just to add test code. 
 
 What policies you can follow to write less tests and get away with it?
 
-(TODO add disclaimer that this is not an endorsement of writing untested code, but a rough guide for surviving the less fortunate real-world projects.)
+(TODO add disclaimer that this is not an endorsement of writing untested code, but a rough guide for surviving 
+the less fortunate real-world projects.)
 
-*Test-driven development without tests.* Same as traditional TDD, only you don't write tests. The important thing is, if think about how would you wrote a test before writing the code, it will shape the way you write the code. The code will be testable by design. More modular, less coupled.  It will be much easier to add test later if you think about it than if you don't even think in TDD fashion.
+*Test-driven development without tests.* Same as traditional TDD, only you don't write tests. The important thing is, 
+if think about how would you wrote a test before writing the code, it will shape the way you write the code. The code 
+will be testable by design. More modular, less coupled.  It will be much easier to add test later if you think about 
+it than if you don't even think in TDD fashion.
 
-*Test-driven refactoring.* Don't spend too much time writing tests before hand, but always write tests for the code you're about to refactor. If you don't know enough about the invariants that these tests should preserve, you're probably not ready for refactoring. Research the code you're working on.
+*Test-driven refactoring.* Don't spend too much time writing tests before hand, but always write tests for the code 
+you're about to refactor. If you don't know enough about the invariants that these tests should preserve, you're 
+probably not ready for refactoring. Research the code you're working on.
 
 *Skip unit tests.* Only write acceptance and integration tests. Don't worry (too much) about unit tests: if your code passes integration tests, it works OK from the outside, and that's what matters most.
 
