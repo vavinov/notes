@@ -1,5 +1,5 @@
-On not writing tests
---------------------
+How to write less tests
+-----------------------
 
 Let's get it out of the way: automated testing is important.  If you're developing a nuclear station control system, 
 or a Mars rover software, you'll definitely have to support a comprehensive test suite.  If you're working on a personal
