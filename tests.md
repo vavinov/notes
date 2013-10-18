@@ -1,6 +1,3 @@
-*this is a work in progress*
-
-
 How to write less tests
 -----------------------
 
