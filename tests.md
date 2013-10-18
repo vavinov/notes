@@ -1,3 +1,6 @@
+*this is a work in progress*
+
+
 How to write less tests
 -----------------------
 
@@ -8,14 +11,14 @@ If you're working on a personal pet project, at early stages you might get by wi
 there's all the other kinds ofsoftware in between, which probably make up most of the software in the world, and 
 which should be covered with tests, to some degree.
 
+TODO quote "Coders at work": quite a few prominent software engineers don't really write too many tests
+
 Writing tests usually involves trade-off: you spend less time writing production code and more time designing, writting 
 and supporting test code.  Assume there's a deadline or something, and you feel you could do with writing a bit less 
 tests than you do now. Or maybe you don't, but you just inherited a large legacy code base with only a modest amount 
 of tests, and can't afford to stop ongoing development for months just to add test code. 
 
-TODO quote "Coders at work": quite a few prominent software engineers don't really write too many tests
-
-What policies you can follow to write less tests and get away with it?
+In other words, you decide to cut a few corners. What policies you can follow to write less tests and get away with it?
 
 TODO add disclaimer that this is not an endorsement of writing untested code, but a rough guide for surviving 
 the less fortunate real-world projects.
